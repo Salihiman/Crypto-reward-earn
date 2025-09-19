@@ -1,0 +1,394 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="ha">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Claim Your Free $50 Crypto Bonus</title>
+  <style>
+    :root{
+      --accent: #00e6a8;
+      --gold: #ffd700;
+      --bg1: #081224;
+      --bg2: #0b2a3a;
+      --card: rgba(255,255,255,0.04);
+      --glass: rgba(255,255,255,0.04);
+      --muted: rgba(255,255,255,0.65);
+      --radius: 14px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: radial-gradient(1200px 600px at 10% 20%, rgba(0,230,168,0.06), transparent 8%),
+                  linear-gradient(180deg,var(--bg1),var(--bg2));
+      color:#fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+    }
+
+    .wrap{
+      width:100%;
+      max-width:980px;
+      display:grid;
+      grid-template-columns: 1fr 420px;
+      gap:28px;
+      align-items:center;
+    }
+
+    /* LEFT: hero */
+    .hero{
+      padding:28px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius: var(--radius);
+      box-shadow: 0 8px 40px rgba(2,6,23,0.6);
+      position:relative;
+      overflow:hidden;
+    }
+    .hero:after{
+      content:"";
+      position:absolute;
+      right:-120px; top:-60px;
+      width:420px;height:420px;
+      background:radial-gradient(circle at 30% 30%, rgba(255,215,0,0.06), transparent 10%),
+                 conic-gradient(from 120deg at 50% 50%, rgba(0,230,168,0.03), transparent 20%);
+      transform:rotate(12deg);
+      pointer-events:none;
+    }
+
+    .badge{
+      display:inline-block;
+      padding:8px 12px;
+      background:rgba(0,0,0,0.35);
+      color:var(--gold);
+      border-radius:999px;
+      font-weight:600;
+      font-size:13px;
+      margin-bottom:18px;
+      letter-spacing:0.2px;
+    }
+
+    h1{
+      margin:0 0 12px 0;
+      font-size:34px;
+      line-height:1.02;
+      color:var(--gold);
+      text-shadow:0 4px 10px rgba(0,0,0,0.6);
+    }
+
+    p.lead{
+      margin:0 0 22px 0;
+      color:var(--muted);
+      font-size:15px;
+    }
+
+    .features{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      margin-bottom:22px;
+    }
+    .feat{
+      background:var(--card);
+      padding:10px 12px;
+      border-radius:10px;
+      font-size:13px;
+      color:#fff;
+      display:flex;gap:8px;align-items:center;
+    }
+    .feat b{color:var(--accent);font-weight:700}
+
+    /* CTA card */
+    .cta{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      padding:18px;
+      border-radius:12px;
+      display:flex;
+      gap:12px;
+      align-items:center;
+      justify-content:space-between;
+      margin-top:8px;
+      border:1px solid rgba(255,255,255,0.03);
+    }
+
+    .left-cta{
+      text-align:left;
+    }
+    .small{
+      font-size:13px;color:var(--muted);
+    }
+
+    .countdown{
+      font-weight:800;
+      font-size:18px;
+      color:var(--accent);
+    }
+
+    .btn{
+      background: linear-gradient(90deg,var(--gold), #ffb84d);
+      color:#081224;
+      border:none;
+      padding:12px 20px;
+      border-radius:10px;
+      font-weight:800;
+      cursor:pointer;
+      box-shadow: 0 6px 18px rgba(255,183,32,0.12);
+      transition: transform .18s ease, box-shadow .18s ease;
+      text-decoration:none;
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+    }
+    .btn:hover{ transform:translateY(-3px); box-shadow: 0 10px 30px rgba(255,183,32,0.18); }
+
+    .sub{
+      font-size:12px;color:var(--muted);
+      margin-top:10px;
+    }
+
+    /* RIGHT: image/card */
+    .card{
+      padding:18px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:14px;
+      text-align:center;
+      border:1px solid rgba(255,255,255,0.03);
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+    }
+    .card .img-wrap{
+      height:200px;
+      border-radius:10px;
+      overflow:hidden;
+      margin-bottom:14px;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(0,230,168,0.06), transparent 5%),
+        url('https://images.unsplash.com/photo-1624435602842-35bb7d234263?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+    }
+    .card h3{ margin:0 0 8px 0; font-size:18px; color:var(--gold) }
+    .card p{ margin:0; color:var(--muted); font-size:13px }
+
+    /* FAQ accordion */
+    .faq{
+      margin-top:16px;
+      text-align:left;
+    }
+    .faq .q{
+      background:transparent;
+      border:1px solid rgba(255,255,255,0.03);
+      padding:10px 12px;
+      border-radius:10px;
+      margin-bottom:8px;
+      cursor:pointer;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .faq .ans{
+      display:none;
+      padding:10px 12px;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    /* responsive */
+    @media (max-width:900px){
+      .wrap{grid-template-columns: 1fr; padding-bottom:40px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main">
+    <section class="hero" aria-labelledby="title">
+      <span class="badge">LIMITED-TIME OFFER</span>
+      <h1 id="title">Claim Your Free <span style="color:var(--accent)">\$50</span> Crypto Bonus</h1>
+      <p class="lead">Sign up & complete simple tasks to unlock your bonus. Fast withdrawals — trusted exchanges.</p>
+
+      <div class="features" aria-hidden="false">
+        <div class="feat">✅ <b>Instant</b> signups</div>
+        <div class="feat">🔒 Content-locked for quality</div>
+        <div class="feat">🌍 Works worldwide</div>
+      </div>
+
+      <div class="cta" aria-live="polite">
+        <div class="left-cta">
+          <div class="small">Offer ends in</div>
+          <div class="countdown" id="countdown">00d 00h 00m 00s</div>
+          <div class="sub">Limited slots available — hurry!</div>
+        </div>
+
+        <!-- BUTTON that triggers locker -->
+        <div>
+          <!-- Use javascript:void(0) to avoid navigation. -->
+          <a href="javascript:void(0);" id="claimBtn" class="btn" role="button" aria-pressed="false">
+            <span>Get Bonus Now</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" stroke="#081224" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <p style="margin-top:18px;color:var(--muted);font-size:13px">
+        By using this offer you agree to the provider's terms. No credit card required for trials.
+      </p>
+
+      <!-- small note to debug -->
+      <div id="debug" style="margin-top:10px;font-size:12px;color:rgba(255,255,255,0.6)"></div>
+
+      <!-- FAQ -->
+      <div class="faq" style="margin-top:14px;">
+        <div class="q" data-i="1"><span>How does this work?</span><span>+</span></div>
+        <div class="ans" data-i="1">Click "Get Bonus Now", complete a short offer via the locker, then claim your bonus.</div>
+
+        <div class="q" data-i="2"><span>Is it safe?</span><span>+</span></div>
+        <div class="ans" data-i="2">Yes — offers are provided by the network; don't share sensitive passwords.</div>
+      </div>
+    </section>
+
+    <aside class="card" aria-label="Offer card">
+      <div class="img-wrap" role="img" aria-label="crypto image"></div>
+      <h3>What's included</h3>
+      <p>Free sign-up bonuses, exchange credits, and step-by-step claim instructions after unlocking.</p>
+      <div style="height:14px"></div>
+      <strong style="display:block;color:var(--accent);margin-bottom:8px">How to claim</strong>
+      <ol style="text-align:left;color:var(--muted);font-size:13px;padding-left:18px;margin:0">
+        <li>Click "Get Bonus Now"</li>
+        <li>Complete the short offer in the locker</li>
+        <li>Follow the on-screen claim steps</li>
+      </ol>
+    </aside>
+  </main>
+
+  <!-- ======= Locker script (your script) ======= -->
+  <script type="text/javascript" src="https://tundrafile.com/script_include.php?id=1843924"></script>
+
+  <script>
+    // ---------- Countdown (example: 72 hours) ----------
+    (function(){
+      // set how many days/hours from now
+      const DAYS = 3;
+      const end = new Date();
+      end.setHours(end.getHours() + DAYS * 24);
+
+      const el = document.getElementById('countdown');
+      function tick(){
+        const now = new Date();
+        let diff = Math.max(0, end - now);
+        const d = Math.floor(diff / (1000*60*60*24));
+        diff -= d*(1000*60*60*24);
+        const h = Math.floor(diff/(1000*60*60));
+        diff -= h*(1000*60*60);
+        const m = Math.floor(diff/(1000*60));
+        diff -= m*(1000*60);
+        const s = Math.floor(diff/1000);
+        el.textContent = `${String(d).padStart(2,'0')}d ${String(h).padStart(2,'0')}h ${String(m).padStart(2,'0')}m ${String(s).padStart(2,'0')}s`;
+        if (d===0 && h===0 && m===0 && s===0) clearInterval(timer);
+      }
+      tick();
+      const timer = setInterval(tick,1000);
+    })();
+
+    // ---------- FAQ accordion ----------
+    document.querySelectorAll('.faq .q').forEach(q=>{
+      q.addEventListener('click', ()=>{
+        const idx = q.getAttribute('data-i');
+        const ans = document.querySelector(`.faq .ans[data-i="${idx}"]`);
+        const open = ans.style.display === 'block';
+        ans.style.display = open ? 'none' : 'block';
+        q.querySelector('span:last-child').textContent = open ? '+' : '−';
+      });
+    });
+
+    // ---------- Locker trigger: robust try multiple names ----------
+    const claimBtn = document.getElementById('claimBtn');
+    const debug = document.getElementById('debug');
+
+    function showDebug(msg){
+      if(!debug) return;
+      debug.textContent = msg;
+      // hide after 6s
+      setTimeout(()=>{ debug.textContent = ''; }, 6000);
+    }
+
+    // Optional: affiliate/landing page to redirect to AFTER user completes locker.
+    // Many locker providers offer a callback you can use. If yours exposes a callback, replace
+    // onLockerComplete() with that handler to redirect automatically.
+    const AFTER_UNLOCK_URL = ""; // <-- optional: put your fallback page or offer link here
+
+    function onLockerComplete(){
+      // this function can be called manually if the locker gives a callback/hook
+      if(AFTER_UNLOCK_URL && AFTER_UNLOCK_URL.length>5){
+        window.location.href = AFTER_UNLOCK_URL;
+      } else {
+        // show a friendly message (you may also show a modal or reveal further instructions)
+        showDebug("Locker completed — follow on-screen instructions to claim your bonus.");
+      }
+    }
+
+    function attemptOpenLocker(){
+      // list of common function names used by locker scripts (we already tested a few)
+      const candidates = [
+        'call_locker','CPABuildLock','show_locker','OpenLocker','openLocker','Locker','openContentLocker','open_offer'
+      ];
+
+      for(let name of candidates){
+        try{
+          if(typeof window[name] === 'function'){
+            window[name]();
+            showDebug('Locker opened via: ' + name);
+            return true;
+          }
+        }catch(e){
+          // continue trying others
+        }
+      }
+
+      // If the locker script registers itself differently (e.g. via global object), try generic detection:
+      // Some scripts expose "cpal" or "cpalocker" etc. Try dispatching a custom event as last resort.
+      try {
+        // dispatch event that some locker scripts may listen to
+        const ev = new CustomEvent('openLocker',{detail:{}});
+        window.dispatchEvent(ev);
+        showDebug('Dispatched openLocker event (last-resort).');
+      } catch(e){}
+      return false;
+    }
+
+    claimBtn.addEventListener('click', function(e){
+      e.preventDefault();
+      // try to open locker
+      const ok = attemptOpenLocker();
+      if(!ok){
+        // fallback: alert and debug text
+        showDebug('Locker script not detected or blocked. Try disabling AdBlock or open in another browser.');
+        alert('Locker script bai load ba ko an toshe shi (AdBlock). Ka gwada bude page cikin incognito ko wata browser.');
+      } else {
+        // if locker supports callback, some providers call a window function when done.
+        // If you know the callback name, set it to call onLockerComplete() in your provider dashboard or script.
+      }
+    });
+
+    // OPTIONAL: if the locker script triggers global callback name you discover (eg window.lockerCompleted),
+    // you can attach to it here. Example (uncomment and replace 'lockerCompleted' if applicable):
+    /*
+    if(typeof window.lockerCompleted === 'function'){
+      const original = window.lockerCompleted;
+      window.lockerCompleted = function(){
+        original.apply(this, arguments);
+        onLockerComplete();
+      }
+    }
+    */
+
+    // Accessibility: allow Enter key on focused CTA
+    claimBtn.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){
+        e.preventDefault(); claimBtn.click();
+      }
+    });
+  </script>
+</body>
+</html>
